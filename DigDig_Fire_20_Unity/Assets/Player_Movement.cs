@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Player_Movement : MonoBehaviour
 {
-    public int MoveSpeed = 100;
+    public int MoveSpeed = 5;
     public Rigidbody2D rb;
     Vector2 angle;
 
@@ -18,6 +18,7 @@ public class Player_Movement : MonoBehaviour
     void Update()
     {
         angle.x = Input.GetAxis("Horizontal");
+        angle.y = Input.GetAxis("Vertical");
     }
 
     private void FixedUpdate()
