@@ -18,7 +18,6 @@ public class Player_Movement : MonoBehaviour
     void Update()
     {
         angle.x = Input.GetAxis("Horizontal");
-        angle.y = Input.GetAxis("Vertical");
     }
 
     private void FixedUpdate()
