@@ -17,7 +17,7 @@ public class Player_Movement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        angle.x = Input.GetAxis("Horisontal");
+        angle.x = Input.GetAxis("Horizontal");
         angle.y = Input.GetAxis("Vertical");
     }
 
